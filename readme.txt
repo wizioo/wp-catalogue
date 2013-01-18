@@ -1,7 +1,7 @@
 === WP Catalogue ===
 Contributors: EnigmaWeb
 Donate link: http://enigmaweb.com.au
-Tags: WP Catalogue, catalogue, catalog, product catalog, product catalogue, display products, wp catalog, list products
+Tags: WP Catalogue, catalogue, catalog, product catalog, product catalogue, display products, wp catalog, list products, products
 Requires at least: 3.1
 Tested up to: 3.5
 Stable tag: trunk
@@ -26,7 +26,8 @@ Use WP Catalogue to display your products in an attractive and professional cata
 
 = Demo =
 
-[Click here for demo](http://demo.enigmaweb.com.au/wp-catalogue/)
+[Click here](http://demo.enigmaweb.com.au/wp-catalogue/) for out-of-the-box demo
+[Click here] (http://50.116.93.214/~rotamoul/product-catalogue/) for an example of a fully styled implementation
 
 == Installation ==
 
@@ -51,8 +52,8 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Screenshots ==
 
-1. An example of WP Catalogue in action - main catalogue view
-2. Another example of WP Catalogue in action - product detail view
+1. An example of WP Catalogue in action, main catalogue view
+2. Another example of WP Catalogue front-end, product detail view
 3. The settings screen in WP-Admin
 4. The product editor in WP-Admin
 
