@@ -27,7 +27,7 @@ Use WP Catalogue to display your products in an attractive and professional cata
 = Demo =
 
 [Click here](http://demo.enigmaweb.com.au/wp-catalogue/) for out-of-the-box demo
-[Click here] (http://50.116.93.214/~rotamoul/product-catalogue/) for an example of a fully styled implementation
+[Click here](http://50.116.93.214/~rotamoul/product-catalogue/) for an example of a fully styled implementation
 
 == Installation ==
 
