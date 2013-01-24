@@ -12,7 +12,7 @@ WP Catalogue - the best way to display your digital product catalogue.
 
 == Description ==
 
-Use WP Catalogue to display your products in an attractive and professional catalogue. It's easy to use, easy to customise, and lets you show off your products in style.
+Use WP Catalogue to display your products in an attractive and professional catalogue. It's easy to use, easy to customise, and lets you show off your products in style. Add to any page using shortcode `[wp-catalogue]`
 
 = Key Features =
 
@@ -23,6 +23,7 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *	Integrated breacrumb for easy hassel-free navigation
 *	Drag & Drop to easily order products and categories
 *   Works in all major browsers - IE7, IE8, IE9, Safari, Firefox, Chrome
+*	Add to any page using shortcode `[wp-catalogue]`
 
 = Demo =
 
@@ -33,7 +34,8 @@ Use WP Catalogue to display your products in an attractive and professional cata
 
 1. Upload the `wp-catalogue` folder to the `/wp-content/plugins/` directory
 1. Activate the WP Catalogue plugin through the 'Plugins' menu in WordPress
-1. Configure the plugin by going to the `WP Catalogue` tab that appears in your admin menu. You can add products from the main tab, manage categories via `Categories`, adjust presentation via `Settings`, and customise the order of products/categories via `Order`
+1. Configure the plugin by going to the `WP Catalogue` tab that appears in your admin menu.
+1. Add to any page using shortcode `[wp-catalogue]`
  
 == Frequently Asked Questions ==
 
