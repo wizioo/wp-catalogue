@@ -61,10 +61,16 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.1 =
+* Fixed a shortcode issue which was effecting the breadcrumb link
+
 = 1.0 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.1 =
+* Fixed a shortcode issue which was effecting the breadcrumb link
 
 = 1.0 =
 * Initial release
