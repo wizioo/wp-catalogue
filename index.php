@@ -42,7 +42,7 @@ function front_scripts(){
 	wp_register_style('catalogue-css', WP_CATALOGUE_CSS.'/catalogue-styles.css' );
 	wp_enqueue_style( 'catalogue-css' );	
 }
-// creating wp catalogue menus
+// creating wp catalogue menus
 //add_action( 'admin_menu', 'wpc_plugin_menu' );
 function wpc_plugin_menu() {
 	add_submenu_page( 'edit.php?post_type=wpcproduct', 'Order', 'Order', 'manage_options', 'customtaxorder', 'customtaxorder', 2 ); 
