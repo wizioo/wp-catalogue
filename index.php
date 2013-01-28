@@ -5,7 +5,7 @@ Plugin Name: WP Catalogue
 Plugin URI: http://www.wordpress.org/extend/plugins/wp-catalogue/
 Description: Display your products in an attractive and professional catalogue. It's easy to use, easy to customise, and lets you show off your products in style.
 Author: Enigma Digital 
-Version: 1.1
+Version: 1.2
 Author URI: http://www.enigmaweb.com.au/
 */
 
