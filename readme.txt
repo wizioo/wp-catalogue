@@ -4,7 +4,7 @@ Donate link: http://enigmaweb.com.au
 Tags: WP Catalogue, catalogue, catalog, product catalog, product catalogue, display products, wp catalog, list products, products
 Requires at least: 3.1
 Tested up to: 3.5
-Stable tag: trunk
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.2 =
+* Fixed several minor bugs and updated EOL for subversion
+
 = 1.1 =
 * Fixed a shortcode issue which was effecting the breadcrumb link
 
@@ -68,6 +71,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2 =
+* Fixed several minor bugs and updated EOL for subversion
 
 = 1.1 =
 * Fixed a shortcode issue which was effecting the breadcrumb link
