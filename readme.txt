@@ -47,6 +47,9 @@ No. There are already lots of good eCommerce plugins that you can use to sell th
 
 You can do some basic presentation adjustments via WP Catalogue > Settings. Beyond this, you can completely customise the design via your theme css. 
 
+= The layout is broken =
+It's most likely just a matter of tweaking the css. In particular check the width of the right column that holds the catalogue items as this is the most common cause of layout issues. Remember, if you want to make changes to how the catalogue displays you need to do it in your theme css not in the plugin css. You can use the !important attribute to override the plugin css.
+
 = Where can I get support for this plugin? =
 
 If you've tried all the obvious stuff and it's still not working please request support via the forum.
