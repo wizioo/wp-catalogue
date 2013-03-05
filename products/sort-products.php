@@ -5,19 +5,15 @@
  * the list of sortable post types and allowing simple
  * ordering by menu_order parameter.
  */
-
 $post_type = trim($_REQUEST['post_type']);
 if (empty($post_type)) $post_type = 'post';
 $post_type_object = get_post_type_object($post_type);
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST')
-{
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $message = "Custom order saved for <em>{$post_type_object->labels->name}</em>";
     $values = (array)$_POST['orderly_values'];
     if (!empty($values))
     {
         global $wpdb;
-
         for ($i = 0; $i < count($values); $i++)
         {
             $post_id = (int)$values[$i];
@@ -30,19 +26,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         }
     }
 }
-
 $loop = new WP_Query(array(
     'post_type' => $post_type,
     'order'     => 'ASC',
     'orderby'   => 'menu_order',
     'nopaging'  => true,
 ));
-
 ?>
 <div class="wrap">
     <?php screen_icon(); ?>
     <h2>Set Products Order<?php //echo esc_html(__("Ordering " . esc_html($post_type_object->labels->name), ORDERLY_DOMAIN)); ?></h2>
-
     <?php
     if (!empty($message)):
     ?>
@@ -54,7 +47,6 @@ $loop = new WP_Query(array(
     <?php
     endif;
     ?>
-
     <?php if ($loop->have_posts()): ?>
     <form name="orderly-order-form" method="post" action="">
         <p>

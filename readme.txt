@@ -1,9 +1,9 @@
 === WP Catalogue ===
 Contributors: EnigmaWeb
-Donate link: http://enigmaweb.com.au
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: WP Catalogue, catalogue, catalog, product catalog, product catalogue, display products, wp catalog, list products, products
 Requires at least: 3.1
-Tested up to: 3.5
+Tested up to: 3.5.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -21,6 +21,8 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *   Customise your catalogue presentation easily (set image sizes, number of products per page, pagination, grid layout etc)
 *	Completely customise the design of the catalogue via your theme css - great for designers/developers
 *	Integrated breacrumb for easy hassel-free navigation
+*	Next/Previous navigation (optional)
+*	Display product price (optional)
 *	Drag & Drop to easily order products and categories
 *   Works in all major browsers - IE7, IE8, IE9, Safari, Firefox, Chrome
 *	Add to any page using shortcode `[wp-catalogue]`
@@ -64,6 +66,14 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.4 =
+* Bug fix - breadcrumb all products link
+* Bug fix - broken image on second thumbnail in IE8
+* Bug fix - foreach fix for single-wpcproduct.php (thanks pedrolaxe)
+* Bug fix - pagination
+* New feature - next/previous function with on/off selector
+* New feature - product price field (leave blank to disable on any product)
+
 = 1.3 =
 * Fixed bug in index.php still causing problem with breacrumb for some users
 
@@ -77,6 +87,14 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.4 =
+* Bug fix - breadcrumb all products link
+* Bug fix - broken image on second thumbnail in IE8
+* Bug fix - foreach fix for single-wpcproduct.php (thanks pedrolaxe)
+* Bug fix - pagination
+* New feature - next/previous function with on/off selector
+* New feature - product price field (leave blank to disable on any product)
 
 = 1.3 =
 * Fixed bug in index.php still causing problem with breacrumb for some users

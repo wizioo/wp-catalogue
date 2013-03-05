@@ -1,15 +1,12 @@
 <?php
-
 /**
  * This file displays the Orderly Admin Page, rendering
  * the list of sortable post types and allowing simple
  * ordering by menu_order parameter.
  */
-
 $post_type = trim($_REQUEST['post_type']);
 if (empty($post_type)) $post_type = 'post';
 $post_type_object = get_post_type_object($post_type);
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     $message = "Custom order saved for <em>{$post_type_object->labels->name}</em>";
@@ -17,12 +14,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     if (!empty($values))
     {
         global $wpdb;
-
         for ($i = 0; $i < count($values); $i++)
         {
             $post_id = (int)$values[$i];
             $sql = $wpdb->prepare(
-                "UPDATE `{$wpdb->posts}` SET `menu_order` = %d WHERE ID = %d",
+			"UPDATE `{$wpdb->posts}` SET `menu_order` = %d WHERE ID = %d",
                 $i,
                 $post_id
             );
@@ -30,7 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         }
     }
 }
-
 $args = array(
 			'orderby' => 'term_order',
 			'order' => 'DESC',
@@ -42,7 +37,6 @@ $count	=	count($terms);
 <div class="wrap">
     <?php screen_icon(); ?>
     <h2><?php echo esc_html(__("Ordering " . esc_html($post_type_object->labels->name), WPC_ORDER)); ?></h2>
-
     <?php
     if (!empty($message)):
     ?>
@@ -54,7 +48,6 @@ $count	=	count($terms);
     <?php
     endif;
     ?>
-
     <?php if ($count>0): ?>
     <form name="orderly-order-form" method="post" action="">
         <p>
@@ -90,4 +83,5 @@ $count	=	count($terms);
         <a href="<?php echo admin_url("post-new.php?post_type={$post_type}"); ?>" class="button-primary"><?php _e("Add {$post_type_object->labels->singular_name}", WPC_ORDER); ?></a>
     </p>
     <?php endif; ?>
+
 </div>
