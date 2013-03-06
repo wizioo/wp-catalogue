@@ -20,7 +20,7 @@ function wp_catalogue_breadcumb(){
 			$pname	=	'>> '.get_the_title();	
 		}
 	
-	echo '<div class="wp-catalogue-bradcrumb"> <a href="'.$catalogue_page_url.'">All Products</a> >> <a href="'.$cat_url.'">'.$tname.'</a>  ' . $pname . '</div>' ;
+	echo '<div class="wp-catalogue-breadcrumb"> <a href="'.$catalogue_page_url.'">All Products</a> >> <a href="'.$cat_url.'">'.$tname.'</a>  ' . $pname . '</div>' ;
 	
 }
 
