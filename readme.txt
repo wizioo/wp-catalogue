@@ -52,6 +52,9 @@ You can do some basic presentation adjustments via WP Catalogue > Settings. Beyo
 = The layout is broken =
 It's most likely just a matter of tweaking the css. In particular check the width of the right column that holds the catalogue items as this is the most common cause of layout issues. Remember, if you want to make changes to how the catalogue displays you need to do it in your theme css not in the plugin css. You can use the !important attribute to override the plugin css.
 
+= Can import/export my catalogue? =
+Yes. You can import/export catalogue data using the built in WordPress function via Tools. It may not import the images (although it will import the file paths) so you will need to copy across all your catalogue images from your old site to the new site uploads folder via FTP. If images still appear broken or missing then you might need to run a search and replace tool to correct the image filepaths for your new site.
+
 = Where can I get support for this plugin? =
 
 If you've tried all the obvious stuff and it's still not working please request support via the forum.
