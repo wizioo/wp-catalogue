@@ -65,7 +65,7 @@ Yes. You can import/export catalogue data using the built in WordPress function 
 
 *	Internationalization
 *	Colour picker for cusomising the theme green colour
-*	[Pro Version] (http://www.maevelander.net/wp-catalogue-going-pro/) with many more advanced features
+*	[Pro Version](http://www.maevelander.net/wp-catalogue-going-pro/) with many more advanced features
 
 = Where can I get support for this plugin? =
 
