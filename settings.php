@@ -5,7 +5,7 @@
 		<div class="wpc-headings"><h3>Settings</h3></div>
 		<div class="wpc-inner">
 		<p class="description">Adjust the basic presentation of your product catalogue here. It is important to set this up before you start uploading products so the plugin knows what size to generate thumbnails and product images </p>
-       <p class="description">You can further customize the the of your product catalogue in your theme css. </p>
+       <p class="description">You can further customise the design of your product catalogue in your theme css. </p>
 		<form method="post" action="options.php">
 		<?php settings_fields( 'baw-settings-group' ); ?>
             <table class="form-table" id="catalogue-settings-tabls">
@@ -64,6 +64,20 @@
                  <span></span>
                 </td>
                 </tr>
+                <tr valign="top">
+                <th scope="row"><label for="inn_temp_head">Inner Template Header</label></th>
+                <td>
+                <textarea name="inn_temp_head" cols="90" rows="7" class="widefat inn_temp"><?php echo get_option('inn_temp_head'); ?></textarea>
+                <small style="position:relative; top:-10px;">Use this area to add your theme layout divs if you're having problems with inner pages of the catalogue.</small>
+                </td>
+                </tr>
+                <tr valign="top">
+                <th scope="row"><label for="inn_temp_foot">Inner Template Footer</label></th>
+                <td>
+                <textarea name="inn_temp_foot" cols="90" rows="7" class="widefat inn_temp"><?php echo get_option('inn_temp_foot'); ?></textarea>
+                <small style="position:relative; top:-10px;">Use this area to close the open divs after the WP Catalogue.</small>
+                </td>
+                </tr>
                 </tbody></table>
 <p class="submit"><input type="submit" name="submit" id="submit" class="button-primary" value="Save Changes"></p></form>
 		<br class="clear">
@@ -78,7 +92,7 @@
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contributaion.</td>
+                    	<td style="border:0;">Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contribution.</td>
                     </tr>
                     <tr>
                     	<td style="border:0;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
@@ -90,17 +104,17 @@
 </form></td>
                     </tr>
                     <tr>
-                    	<td style="border:0;">you can also help by <a href="#">rating this plugin on wordpress.org</a></td>
+                    	<td style="border:0;">you can also help by <a href="http://wordpress.org/support/view/plugin-reviews/wp-catalogue" target="_blank">rating this plugin on wordpress.org</a></td>
                     </tr>
                 </tbody>
             </table>
             <table cellpadding="0" class="widefat" border="0">
             	<thead>
-                	<th scope="col">Need Support</th>
+                	<th scope="col">Need Support?</th>
                 </thead>
                 <tbody>
                 	<tr>
-                    	<td style="border:0;">If you are having problems with plugin please talk about them on <a href="#">Support Forums</a></td>
+                    	<td style="border:0;">Check out the <a href="http://wordpress.org/plugins/wp-catalogue/faq/" target="_blank">FAQs</a> and <a href="http://wordpress.org/support/plugin/wp-catalogue" target="_blank">Support Forums</a></td>
                     </tr>
                 </tbody>
             </table>

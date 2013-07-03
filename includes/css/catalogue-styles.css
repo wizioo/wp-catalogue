@@ -67,6 +67,7 @@
 .wpc-img img {
 	border-radius:0;
 	box-shadow: none;
+	height: 110%;
 }
 .wpc-title {
 	color: #15845e;
@@ -115,6 +116,7 @@
 	float:left;
 	border:#dcdbdb 5px solid;
 	margin:0 14px 0 0;
+	overflow: hidden;
 }
 .wpc-product-img {
 	width:161px;
@@ -142,4 +144,10 @@
 }
 .entry-content {
 	line-height: inherit !important;
+}
+.wp-catalogue-breadcrumb {
+	padding: 0 0 20px;
+}
+.entry-content img {
+	max-width: inherit !important; /* Fluid images for posts, comments, and widgets */
 }

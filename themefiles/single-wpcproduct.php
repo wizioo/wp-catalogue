@@ -1,8 +1,25 @@
 <?php get_header(); ?>
 
 <!--Content-->
-<div id="content" role="main">	
-		<?php wp_catalogue_breadcumb(); ?>
+<?php echo get_option('inn_temp_head'); ?>	
+		<?php 
+		$catalogue_page_url	=	get_option('catalogue_page_url');
+	 $terms	=	get_terms('wpccategories');
+		global $post;
+		$terms1 = get_the_terms($post->id, 'wpccategories');
+		if($terms1){
+		foreach( $terms1 as $term1 ){
+			$slug	= $term1->slug;
+			$tname	=	$term1->name;
+			$cat_url	=	get_bloginfo('siteurl').'/?wpccategories=/'.$slug;
+		};
+	}
+
+		if(is_single()){
+			$pname	=	'&gt;&gt;'.get_the_title();	
+		}
+		echo '<div class="wp-catalogue-breadcrumb"> <a href="'.$catalogue_page_url.'">All Products</a> &gt;&gt; <a href="'.$cat_url.'">'.$tname.'</a>  ' . $pname . '</div>';
+		 ?>
     	<div id="wpc-catalogue-wrapper">
 		<?php
 
@@ -67,10 +84,11 @@ echo '<div id="wpc-col-1">
 			}
 			$icroping	=	get_option('croping');
 		?>
+        
         <div class="product-img-view" style="width:<?php echo $img_width; ?>px; height:<?php echo $img_height; ?>px;">
-        <img src="<?php echo $img1; ?>" alt="" id="img1" height="<?php echo $img_height; ?>" width="<?php echo $img_width; ?>" />
-        <img src="<?php echo $img2; ?>" alt="" id="img2" height="<?php echo $img_height; ?>" width="<?php echo $img_width; ?>" style="display:none;" />
-        <img src="<?php echo $img3; ?>" alt="" id="img3" height="<?php echo $img_height; ?>" width="<?php echo $img_width; ?>" style="display:none;"  />
+        <img src="<?php echo $img1; ?>" alt="" id="img1" height="<?php echo $img_height; ?>" width="<?php echo($icroping == 'image_scale_crop')? '' : $img_width; ?>" />
+        <img src="<?php echo $img2; ?>" alt="" id="img2" height="<?php echo $img_height; ?>" width="<?php echo($icroping == 'image_scale_crop')? '' : $img_width; ?>" style="display:none;" />
+        <img src="<?php echo $img3; ?>" alt="" id="img3" height="<?php echo $img_height; ?>" width="<?php echo($icroping == 'image_scale_crop')? '' : $img_width; ?>" style="display:none;"  />
         </div>
         <div class="wpc-product-img">
         <?php if($img1): ?>
@@ -106,6 +124,6 @@ echo '<div id="wpc-col-1">
         <!--/col-2-->
     <div class="clear"></div>    
     </div>
-</div>
+<?php echo get_option('inn_temp_foot'); ?>
   <!--/Content-->
 <?php get_footer();
