@@ -63,7 +63,7 @@ This sometimes happens if the catalogue doesn't know which page template to use.
 
 = Can I use WP Catalogue in my Language? =
 
-Yes, the plugin is internationalized and ready for translation. If you would like to help with a translation please [contact me.] (http://www.maevelander.net/contact)
+Yes, the plugin is internationalized and ready for translation. If you would like to help with a translation please [contact me](http://www.maevelander.net/contact)
 
 = Can import/export my catalogue? =
 
