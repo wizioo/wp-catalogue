@@ -10,7 +10,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2013-08-30 16:05+0800\n"
 "Last-Translator: Maeve Lander <maeve@enigmaplugins.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Enigma Plugins\n"
 "X-Generator: Poedit 1.5.7\n"
 
 #: products/order.php:38
