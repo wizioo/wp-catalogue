@@ -18,7 +18,7 @@ Use WP Catalogue to display your products in an attractive and professional cata
 
 *	Simple, light-weight product catalogue
 *	Add up to 3 images per product, displaying in an interactive lightbox
-*   Customise your catalogue presentation easily (set image sizes, number of products per page, pagination, grid layout etc)
+*   Customise your catalogue presentation easily (choose theme colour, set image sizes, number of products per page, pagination, grid layout etc)
 *	Completely customise the design of the catalogue via your theme css - great for designers/developers
 *	Integrated breacrumb for easy hassel-free navigation
 *	Next/Previous navigation (optional)
@@ -45,6 +45,10 @@ Use WP Catalogue to display your products in an attractive and professional cata
 
 No. There are already lots of good eCommerce plugins that you can use to sell things. WP Catalogue is different - it is used for people who want to show a catalogue of products ONLY, not for selling things online.
 
+= I'm getting a 404 error =
+
+Please go to Settings > Permalinks and resave your permalink structure.
+
 = How can I customise the design? =
 
 You can do some basic presentation adjustments via WP Catalogue > Settings. Beyond this, you can completely customise the design via your theme css. 
@@ -57,15 +61,13 @@ It's most likely just a matter of tweaking the css. In particular check the widt
 
 This sometimes happens if the catalogue doesn't know which page template to use. You can fix this on the Settings Screen by manually adding your Inner Template Header and Inner Template Footer. If you're confused, take a look at the plugin file single-wpcproduct.php which is in /themefiles and you'll see where this code will end up (at the top and bottom of the file, with the WP Catalogue content sitting within it). 
 
+= Can I use WP Catalogue in my Language? =
+
+Yes, the plugin is internationalized and ready for translation. If you would like to help with a translation please [contact me.] (http://www.maevelander.net/contact)
+
 = Can import/export my catalogue? =
 
 Yes. You can import/export catalogue data using the built in WordPress function via Tools. It may not import the images (although it will import the file paths) so you will need to copy across all your catalogue images from your old site to the new site uploads folder via FTP. If images still appear broken or missing then you might need to run a search and replace tool to correct the image filepaths for your new site.
-
-= What features are coming soon? =
-
-*	Internationalization
-*	Colour picker for cusomising the theme green colour
-*	[Pro Version](http://www.maevelander.net/wp-catalogue-going-pro/) with many more advanced features
 
 = Where can I get support for this plugin? =
 
@@ -80,6 +82,14 @@ If you've tried all the obvious stuff and it's still not working please request 
 4. The product editor in WP-Admin
 
 == Changelog ==
+
+= 1.6 =
+* Internationalization
+* Further pagination fix
+* Further scale and crop fix
+* Fix for thumbnails in IE
+* Front-end + back-end sorting feature fix
+* Added Iris color picker
 
 = 1.5 =
 * Bug fix - fixed scale and crop function
@@ -107,6 +117,15 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.6 =
+* Internationalization
+* Further pagination fix
+* Further scale and crop fix
+* Fix for thumbnails in IE
+* Front-end + back-end sorting feature fix
+* Added Iris color picker
+
 
 = 1.5 =
 * Bug fix - fixed scale and crop function

@@ -22,7 +22,7 @@
 	list-style:none;
 	padding: 0;
 	margin: 0;
-	background: url(images/cat-sprtr.gif) no-repeat left bottom;
+	background: url(images/cat-sprtr.gif) repeat-x left bottom;
 }
 #wpc-col-1 ul li:last-child {
 	background: none;
@@ -33,16 +33,16 @@
 	font-size:18px;
 	text-decoration:none;
 	padding:10px 30px 10px 21px;
-	background: url(images/sidebar-sprtr.gif) repeat-y 195px 0;
+	background: url(images/sidebar-sprtr.gif) repeat-y 218px 0;
 	text-transform: capitalize;
 }
 #wpc-col-1 ul li a:hover, #wpc-col-1 ul li.active-wpc-cat a {
 	border-right:none;
-	background:url(images/bgs-1.png) no-repeat left top;
+	background:#090 no-repeat left top;
 	color:#ffffff;
 }
 #wpc-col-2 {
-	width: 712px;
+	width: 695px;
 	float:left;
 }
 .wpc-product {

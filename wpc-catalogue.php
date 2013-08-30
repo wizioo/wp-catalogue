@@ -15,14 +15,14 @@ function catalogue() {
 	}else{
 		 $paged	=	1;	
 	}
-	$args1 = array(
+	 
+	$args = array(
 			'orderby' => 'term_order',
 			'order' => 'ASC',
-			'hide_empty' => true,
-		);
-
-	$terms	=	get_terms('wpccategories',$args1);
-	$count	=	count($terms);
+			'hide_empty' => false,
+);
+$termsCatSort	=	get_terms('wpccategories', $args);
+	$count	=	count($termsCatSort);
 	$post_content	=	get_queried_object()->post_content;
 	
 		if(strpos($post_content,'[wp-catalogue]')!==false){
@@ -67,7 +67,7 @@ function catalogue() {
 		// generating sidebar
 		if($count>0){
 			$return_string .= '<li class="wpc-category ' . $class . '"><a href="'. get_option('catalogue_page_url') .'">All Products</a></li>';	
-       		foreach($terms as $term){
+       		foreach($termsCatSort as $term){
 				if($term_slug==$term->slug){
 				$class	=	'active-wpc-cat';
 			}else{
@@ -139,8 +139,9 @@ function catalogue() {
 				$price		=	get_post_meta(get_the_id(),'product_price',true); 
 				 $return_string .= '<!--wpc product-->';
 				 $return_string .= '<div class="wpc-product">';
-				 $return_string .= '<div class="wpc-img" style="width: '. $twidth . 'px; height:' . $theight . 'px; overflow:hidden"><a href="'. $permalink .'" class="wpc-product-link"><img src="'. $img .'" alt="" height="' . $theight . '" width="';
-				 if(get_option('tcroping') == 'thumb_scale_fit') { $return_string .= $twidth; };
+				 $return_string .= '<div class="wpc-img" style="width:' . $twidth . 'px; height:' . $theight . 'px; overflow:hidden"><a href="'. $permalink .'" class="wpc-product-link"><img src="'. $img .'" alt="" height="' . $theight . '" ';
+				  if(!get_option('tcroping')){
+					  $return_string .=  '" width="' .$img_width. '"'; }
 				 $return_string .= '" /></a></div>';
 				 $return_string .= '<p class="wpc-title"><a href="'. $permalink .'">' . $title . '</a></p>';
 				 $return_string .= '</div>';
@@ -163,9 +164,9 @@ function catalogue() {
 			for($p=1; $p<=$pages; $p++){
 				$cpage	=	'active-wpc-page';
 				if($paged==$p){
-						$return_string .=    '<a href="' . $crrurl . '/page/'. $p .'" class="pagination-number '. $cpage .'">'. $p .'</a>';
+						$return_string .=    '<a href="?page_id=' .$pid. '&paged='. $p .'" class="pagination-number '. $cpage .'">'. $p .'</a>';
 					}else{
-						$return_string .=    '<a href="' . $crrurl . '/page/'. $p .'" class="pagination-number">'. $p .'</a>';	
+						$return_string .=    '<a href="?page_id=' .$pid. '&paged='. $p .'" class="pagination-number">'. $p .'</a>';	
 					}
 		}
 		 $return_string .= '</div>'; 

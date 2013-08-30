@@ -35,7 +35,7 @@ function customtaxorder_update_settings() {
 
 	if ( isset($customtaxorder_settings['update']) ) {
 
-		echo '<div class="updated fade" id="message"><p>Custom Taxonomy Order settings '.$customtaxorder_settings['update'].'.</p></div>';
+		echo '<div class="updated fade" id="message"><p>'. __('Custom Taxonomy Order settings ','wpc').$customtaxorder_settings['update'].'.</p></div>';
 
 		unset($customtaxorder_settings['update']);
 
@@ -136,7 +136,7 @@ function customtaxorder() {
         <h3>Order Categories</h3>
       </div>
       <div class="wpc-inner">
-        <p class="description">Drag and drop items to customise the order of categories in WP Catalogue </p>
+        <p class="description"><?php _e('Drag and drop items to customise the order of categories in WP Catalogue','wpc') ?> </p>
         <form name="custom-order-form" method="post" action="">
           <?php  
 
@@ -163,13 +163,13 @@ function customtaxorder() {
             <?php endforeach; ?>
           </ul>
           <img src="<?php echo esc_url( admin_url( 'images/wpspin_light.gif' ) ); ?>" id="custom-loading" style="display:none" alt="" />
-          <input type="submit" name="order-submit" id="order-submit" class="button-primary" value="<?php _e('Save Order', 'customtaxorder') ?>" />
+          <input type="submit" name="order-submit" id="order-submit" class="button-primary" value="<?php _e('Save Order', 'wpc') ?>" />
           <div class="clear"></div>
           <input type="hidden" id="hidden-custom-order" name="hidden-custom-order" />
           <input type="hidden" id="hidden-parent-id" name="hidden-parent-id" value="<?php echo $parent_ID; ?>" />
           <?php } else { ?>
           <p>
-            <?php _e('No terms found', 'customtaxorder'); ?>
+            <?php _e('No terms found', 'wpc'); ?>
           </p>
           <?php } ?>
         </form>
@@ -312,7 +312,7 @@ $loop = new WP_Query(array(
         <h3>Order Products</h3>
       </div>
       <div class="wpc-inner">
-        <p class="description">Drag and drop items to customise the order of products in WP Catalogue </p>
+        <p class="description"><?php _e('Drag and drop items to customise the order of products in WP Catalogue','wpc') ?> </p>
         <form name="orderly-order-form" method="post" action="">
           <ul class="orderly-items orderly-sortable">
             <?php
@@ -350,11 +350,11 @@ $loop = new WP_Query(array(
   <div class="wpc-right-liquid">
     <table cellpadding="0" class="widefat donation" style="margin-bottom:10px; border:solid 2px #008001;" width="50%">
       <thead>
-      <th scope="col"><strong style="color:#008001;">Help Improve This Plugin!</strong></th>
+      <th scope="col"><strong style="color:#008001;"><?php _e('Help Improve This Plugin!','wpc'); ?></strong></th>
           </thead>
       <tbody>
         <tr>
-          <td style="border:0;">Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contributaion.</td>
+          <td style="border:0;"><?php _e('Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contributaion.','wpc') ?></td>
         </tr>
         <tr>
           <td style="border:0;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
@@ -365,7 +365,7 @@ $loop = new WP_Query(array(
             </form></td>
         </tr>
         <tr>
-          <td style="border:0;">you can also help by <a href="#">rating this plugin plugin on wordpress.org</a></td>
+          <td style="border:0;"><?php _e('you can also help by','wpc') ?> <a href="http://wordpress.org/plugins/wp-catalogue/"><?php _e('rating this plugin on wordpress.org','wpc')?></a></td>
         </tr>
       </tbody>
     </table>
@@ -375,7 +375,7 @@ $loop = new WP_Query(array(
           </thead>
       <tbody>
         <tr>
-          <td style="border:0;">If you are having problems with plugin please talk about them on <a href="#">Support Forums</a></td>
+          <td style="border:0;"><?php _e('If you are having problems with plugin please talk about them on ','wpc') ?><a href="http://wordpress.org/support/plugin/wp-catalogue">Support Forums</a></td>
         </tr>
       </tbody>
     </table>
@@ -405,11 +405,11 @@ function customtaxorder_update_order() {
 
 		}
 
-		echo '<div id="message" class="updated fade"><p>'. __('Order updated successfully.', 'customtaxorder').'</p></div>';
+		echo '<div id="message" class="updated fade"><p>'. __('Order updated successfully.', 'wpc').'</p></div>';
 
 	} else {
 
-		echo '<div id="message" class="error fade"><p>'. __('An error occured, order has not been saved.', 'customtaxorder').'</p></div>';
+		echo '<div id="message" class="error fade"><p>'. __('An error occured, order has not been saved.', 'wpc').'</p></div>';
 
 	}
 

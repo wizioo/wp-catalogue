@@ -4,7 +4,7 @@ Plugin Name: WP Catalogue
 Plugin URI: http://www.wordpress.org/extend/plugins/wp-catalogue/
 Description: Display your products in an attractive and professional catalogue. It's easy to use, easy to customise, and lets you show off your products in style.
 Author: Maeve Lander
-Version: 1.5
+Version: 1.6
 Author URI: http://www.maevelander.net
 */
 //creating db tables
@@ -42,19 +42,25 @@ function wpc_admin_init(){
     $style_url = WP_CATALOGUE_CSS.'/sorting.css';
     wp_register_style(WPC_STYLE, $style_url);
     $script_url = WP_CATALOGUE_JS.'/sorting.js';
-    wp_register_script(WPC_SCRIPT, $script_url, array('jquery', 'jquery-ui-sortable'));
+    wp_register_script(WPC_SCRIPT, $script_url, array('jquery', 'jquery-ui-sortable'));	
 }
 
 add_action('admin_init', 'wpc_admin_init');
 add_action('wp_enqueue_scripts', 'front_scripts');
 
 function front_scripts(){
+	 global $bg_color;
+	 $bg_color = get_option('templateColorforProducts');
 	wp_enqueue_script('jquery');
 	wp_deregister_script('wpcf-js');
 	wp_register_script('wpcf-js',WP_CATALOGUE_JS.'/wpc-front.js');
 	wp_enqueue_script('wpcf-js');
 	wp_register_style('catalogue-css', WP_CATALOGUE_CSS.'/catalogue-styles.css' );
-	wp_enqueue_style( 'catalogue-css' );	
+	wp_enqueue_style( 'catalogue-css' );
+	
+	/* ========================  Take User Defined color =========================== 
+	wp_register_style('dynamic-css', WP_CATALOGUE_CSS.'/dynamic-styles.css.php' );
+	wp_enqueue_style( 'dynamic-css' );	*/	
 }
 
 // creating wp catalogue menus
@@ -80,6 +86,7 @@ $plugin_dir_path = dirname(__FILE__);
 function register_catalogue_settings() {
 	update_option('posts_per_page',get_option('pagination'));
 	register_setting( 'baw-settings-group', 'grid_rows' );
+	register_setting( 'baw-settings-group', 'templateColorforProducts' );  // new added color picker
 	register_setting( 'baw-settings-group', 'pagination' );
 	register_setting( 'baw-settings-group', 'image_height' );
 	register_setting( 'baw-settings-group', 'image_width' );
@@ -135,3 +142,44 @@ function do_theme_redirect($url) {
     }
 }
 add_action( 'admin_notices', 'dev_check_current_screen' );
+
+/* ========================  pick color through Iris =========================== */
+
+add_action( 'admin_enqueue_scripts', 'mw_enqueue_color_picker' );
+function mw_enqueue_color_picker( $hook_suffix ) {
+    wp_enqueue_style( 'wp-color-picker' );
+    wp_enqueue_script( 'my-script-handle', plugins_url('my-script.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
+}
+/* ========================  Multicolor =========================== */
+
+load_plugin_textdomain( 'wpc', WPCACHEHOME . 'languages', basename( dirname( __FILE__ ) ) . '/languages' );
+
+/* ========================  Take User Defined color =========================== */
+
+add_action('wp_head', 'colorPalette');
+function colorPalette() { ?>
+
+<style type="text/css">
+.wpc-img:hover {
+ border: 5px solid <?php echo get_option('templateColorforProducts');
+?> !important;
+}
+.wpc-title {
+ color: <?php echo get_option('templateColorforProducts');
+?> !important;
+}
+.wpc-title a:hover {
+ color: <?php echo get_option('templateColorforProducts');
+?> !important;
+}
+#wpc-col-1 ul li a:hover, #wpc-col-1 ul li.active-wpc-cat a {
+	border-right: none;
+ background:<?php echo get_option('templateColorforProducts');
+?> no-repeat left top !important;
+}
+.wpc-paginations a:hover, .wpc-paginations .active-wpc-page {
+	background: <?php echo get_option('templateColorforProducts');
+?> !important;
+}
+</style>
+<?php }

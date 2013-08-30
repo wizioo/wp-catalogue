@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             $post_id = (int)$values[$i];
             $sql = $wpdb->prepare(
-			"UPDATE `{$wpdb->posts}` SET `menu_order` = %d WHERE ID = %d",
+			"UPDATE `{$wpdb->post}` SET `menu_order` = %d WHERE ID = %d",
                 $i,
                 $post_id
             );
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 }
 $args = array(
 			'orderby' => 'term_order',
-			'order' => 'DESC',
+			'order' => 'ASC',
 			'hide_empty' => false,
 );
 $terms	=	get_terms('wpccategories', $args);

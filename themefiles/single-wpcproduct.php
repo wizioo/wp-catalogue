@@ -86,9 +86,9 @@ echo '<div id="wpc-col-1">
 		?>
         
         <div class="product-img-view" style="width:<?php echo $img_width; ?>px; height:<?php echo $img_height; ?>px;">
-        <img src="<?php echo $img1; ?>" alt="" id="img1" height="<?php echo $img_height; ?>" width="<?php echo($icroping == 'image_scale_crop')? '' : $img_width; ?>" />
-        <img src="<?php echo $img2; ?>" alt="" id="img2" height="<?php echo $img_height; ?>" width="<?php echo($icroping == 'image_scale_crop')? '' : $img_width; ?>" style="display:none;" />
-        <img src="<?php echo $img3; ?>" alt="" id="img3" height="<?php echo $img_height; ?>" width="<?php echo($icroping == 'image_scale_crop')? '' : $img_width; ?>" style="display:none;"  />
+        <img src="<?php echo $img1; ?>" alt="" id="img1" height="<?php echo $img_height; ?>" <?php if(!get_option('croping')){?> width=" <?php $img_width ?>" <?php } ?> />
+        <img src="<?php echo $img2; ?>" alt="" id="img2" height="<?php echo $img_height; ?>" <?php if(!get_option('croping')){?> width=" <?php $img_width ?>" <?php } ?> />
+        <img src="<?php echo $img3; ?>" alt="" id="img3" height="<?php echo $img_height; ?>" <?php if(!get_option('croping')){?> width=" <?php $img_width ?>" <?php } ?> />
         </div>
         <div class="wpc-product-img">
         <?php if($img1): ?>
