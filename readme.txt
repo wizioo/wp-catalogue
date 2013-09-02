@@ -83,6 +83,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.7 =
+* Bug fix to themefiles/single-wpcproduct.php for pagination issue
+
 = 1.6 =
 * Internationalization
 * Further pagination fix
@@ -117,6 +120,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.7 =
+* Bug fix to themefiles/single-wpcproduct.php for pagination issue. Please update if you are having a conflict with blog posts pagination
 
 = 1.6 =
 * Internationalization
