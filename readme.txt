@@ -32,7 +32,7 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *	[Click here](http://demo.enigmaweb.com.au/wp-catalogue/) for out-of-the-box demo
 *	[Click here](http://www.freewheelbicyclestore.com.au/bicycles-accessories/) for an example of a fully styled implementation
 
-= Translation =
+= Languages =
 WP Catalogue has been translated into the following languages:
 *	English
 *	French
