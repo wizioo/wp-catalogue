@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: WP Catalogue, catalogue, catalog, product catalog, product catalogue, display products, wp catalog, list products, products
 Requires at least: 3.1
-Tested up to: 3.5.2
+Tested up to: 3.6
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -33,9 +33,12 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *	[Click here](http://www.freewheelbicyclestore.com.au/bicycles-accessories/) for an example of a fully styled implementation
 
 = Languages =
+
 WP Catalogue has been translated into the following languages:
+
 *	English
 *	French
+*	Spanish
 
 Would you like to help translate the plugin into more languages? It's very easy - you don't have to know any code. Please [contact Maeve](http://www.enigmaweb.com.au/contact/)
 
@@ -71,7 +74,7 @@ This sometimes happens if the catalogue doesn't know which page template to use.
 
 = Can I use WP Catalogue in my Language? =
 
-Yes, the plugin is internationalized and ready for translation. If you would like to help with a translation please [contact me](http://www.maevelander.net/contact)
+Yes, the plugin is internationalized and ready for translation. If you would like to help with a translation please [contact me](http://www.enigmaweb.com.au/contact)
 
 = Can import/export my catalogue? =
 
@@ -91,8 +94,11 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.7.1 =
+* Bug fix for pagination issue
+
 = 1.7 =
-* Bug fix to themefiles/single-wpcproduct.php for pagination issue
+* Bug fix to themefiles/single-wpcproduct.php for scale and crop issue
 
 = 1.6 =
 * Internationalization
@@ -129,8 +135,11 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Upgrade Notice ==
 
+= 1.7.1 =
+* Bug fix for pagination issue
+
 = 1.7 =
-* Bug fix to themefiles/single-wpcproduct.php for pagination issue. Please update if you are having a conflict with blog posts pagination
+* Bug fix to themefiles/single-wpcproduct.php for scale and crop issue
 
 = 1.6 =
 * Internationalization

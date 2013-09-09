@@ -11,8 +11,14 @@ function catalogue() {
 	}
 	$crrurl	=	get_bloginfo('wpurl').'/'.$slug;
 	if(get_query_var('paged')){
-		$paged	=	get_query_var('paged');	
-	}else{
+		$paged	=	get_query_var('paged');
+	}
+	elseif ( get_query_var('page') ) {
+
+    	$paged = get_query_var('page');
+
+		} 
+	else{
 		 $paged	=	1;	
 	}
 	 
@@ -160,14 +166,34 @@ $termsCatSort	=	get_terms('wpccategories', $args);
 		
 			if($pages>1){
 			$return_string .= '<div class="wpc-paginations">';
-			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1; 
+			 if(get_query_var('paged')){
+			 $paged = get_query_var('paged');
+			 } 
+			 else if (get_query_var('page')){
+			 $paged = get_query_var('paged');
+			 }
+			 else {
+			 $paged = 1; }
 			for($p=1; $p<=$pages; $p++){
 				$cpage	=	'active-wpc-page';
-				if($paged==$p){
-						$return_string .=    '<a href="?page_id=' .$pid. '&paged='. $p .'" class="pagination-number '. $cpage .'">'. $p .'</a>';
-					}else{
-						$return_string .=    '<a href="?page_id=' .$pid. '&paged='. $p .'" class="pagination-number">'. $p .'</a>';	
-					}
+				if (is_front_page()) {
+					  if($paged==$p){
+				  
+						  $return_string .=  '<a href="?paged='. $p .'" class="pagination-number '. $cpage .'">'. $p .'</a>';
+						  }
+					  else{
+						 $return_string .=   '<a href="?paged='. $p .'" class="pagination-number">'. $p .'</a>';	
+						  }
+					  } // end is_home condition
+					   else{ // else of is_home
+					  if($paged==$p){
+				  
+						  $return_string .= '<a href="?page_id='.$page_id.'&paged='. $p .'" class="pagination-number '. $cpage .'">'. $p .'</a>';
+						  }
+					  else{
+						  $return_string .=    '<a href="?page_id='.$page_id.'&paged='. $p .'" class="pagination-number">'. $p .'</a>';	
+						  } 
+					  } // end is_home condition
 		}
 		 $return_string .= '</div>'; 
 		}
