@@ -35,7 +35,6 @@ Use WP Catalogue to display your products in an attractive and professional cata
 = Languages =
 
 WP Catalogue has been translated into the following languages:
-
 *	English
 *	French
 *	Spanish
