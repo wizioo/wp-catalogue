@@ -40,6 +40,7 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *	Czech
 *	Bulgarian
 *	Dutch
+*	Italian
 
 Would you like to help translate the plugin into more languages? It's very easy - you don't have to know any code. Please [contact Maeve](http://www.enigmaweb.com.au/contact/)
 
@@ -71,7 +72,7 @@ It's most likely just a matter of tweaking the css. In particular check the widt
 
 = My main catalogue page works fine but the inner pages are broken =
 
-This sometimes happens if the catalogue doesn't know which page template to use. You can fix this on the Settings Screen by manually adding your Inner Template Header and Inner Template Footer. If you're confused, take a look at the plugin file single-wpcproduct.php which is in /themefiles and you'll see where this code will end up (at the top and bottom of the file, with the WP Catalogue content sitting within it). 
+This sometimes happens if the catalogue doesn't know which page template to use. You can fix this on the Settings Screen by manually adding your Inner Template Header and Inner Template Footer. If you're confused, take a look at the plugin file single-wpcproduct.php which is in /themefiles and you'll see where this code will end up (at the top and bottom of the file, with the WP Catalogue content sitting within it). There are also several threads in the support forum with specific examples so please run a search.
 
 = Can I use WP Catalogue in my Language? =
 

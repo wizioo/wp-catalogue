@@ -9,8 +9,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2013-10-16 11:57+0100\n"
-"Last-Translator: Maeve Lander <maeve@enigmaplugins.com>\n"
-"Language-Team: Enigma Plugins\n"
+"Last-Translator: Paolo Sartorio <paolosartorio@email.it>\n"
+"Language-Team: Paolo Sartorio\n"
 "X-Generator: Poedit 1.5.7\n"
 
 #: products/order.php:38
