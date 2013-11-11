@@ -42,9 +42,21 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *	Dutch
 *	Italian
 *	Brazilian Portuguese
+*	Romanian
 
 Would you like to help translate the plugin into more languages? It's very easy - you don't have to know any code. Please [contact Maeve](http://www.enigmaweb.com.au/contact/)
 
+= Pro Version =
+
+Coming Soon...
+
+*	Ability to handle sub-categories
+*	Embed a specific category or sub-category into page/post using shortcode
+*	Responsive layout
+*	Ability to turn side menu on/off
+*	Replace 'Product Details' title with title of actual product (on/off option)
+*	On/off for 'show breadcrumbs'
+*	Featured products function
 
 == Installation ==
 
