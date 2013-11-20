@@ -44,6 +44,9 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *	Brazilian Portuguese
 *	Romanian
 *	Turkish
+*	German
+
+A big thank you to everyone who has helped with translation so far.
 
 Would you like to help translate the plugin into more languages? It's very easy - you don't have to know any code. Please [contact Maeve](http://www.enigmaweb.com.au/contact/)
 
