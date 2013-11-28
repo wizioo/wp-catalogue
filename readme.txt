@@ -45,6 +45,9 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *	Romanian
 *	Turkish
 *	German
+*	Russian
+*	Ukrainian
+*	Chinese
 
 A big thank you to everyone who has helped with translation so far.
 
