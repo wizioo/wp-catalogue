@@ -48,6 +48,7 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *	Russian
 *	Ukrainian
 *	Chinese
+*	Finnish
 
 A big thank you to everyone who has helped with translation so far.
 
