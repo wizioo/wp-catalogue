@@ -8,14 +8,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-11-15 11:26+0100\n"
-"Last-Translator: Sebastian Kuxmann <kuxmann@googlemail.com>\n"
+"PO-Revision-Date: 2013-12-07 22:05+0100\n"
+"Last-Translator: Rene Zensen <rene.zensen@gmx.net>\n"
 "Language-Team: Enigma Plugins\n"
 "X-Generator: Poedit 1.5.7\n"
 
 #: products/order.php:38
 msgid "Custom Taxonomy Order settings "
-msgstr "Benutzer deffinierte Klassifikationseinstellungen"
+msgstr "Benutzerdefinierte Klassifizierungseinstellungen"
 
 #: products/order.php:139
 msgid ""
@@ -204,7 +204,7 @@ msgstr "Grid Zeilen"
 
 #: settings.php:33
 msgid "products per row"
-msgstr "Produkte per Zeile"
+msgstr "Produkte pro Zeile"
 
 #: settings.php:38
 msgid "Choose Theme Color"
@@ -217,7 +217,7 @@ msgstr "Seitennummerierung"
 #: settings.php:44
 msgid "products per page (use 0 for unlimited)"
 msgstr ""
-"Produkte per Seite (Verwenden Sie die 0 für eine unbegrenzte Darstellung)"
+"Produkte pro Seite (Verwenden Sie 0 für eine unbegrenzte Darstellung)"
 
 #: settings.php:47
 msgid "Gallery Image"
@@ -241,11 +241,11 @@ msgstr "Skalieren & Zuschneiden"
 
 #: settings.php:65
 msgid "Scale To Fit"
-msgstr "Größe anzupassen"
+msgstr "Größe anpassen"
 
 #: settings.php:69
 msgid "Show Next/Prev Links"
-msgstr "Nächstes/vorherige Link"
+msgstr "Zeige Vor/Zurück Links"
 
 #: settings.php:77
 msgid "Inner Template Header"
@@ -256,8 +256,8 @@ msgid ""
 "Use this area to add your theme layout divs if you are having problems with "
 "inner pages of the catalogue."
 msgstr ""
-"Verwenden Sie diesen Bereich um Ihr Thema Layout divs hinzufügen, wenn Sie "
-"Probleme mit inneren Seiten des Katalogs haben."
+"Verwenden Sie diesen Bereich um die divs aus ihrem Theme-Layout einzufügen wenn Sie "
+"Probleme mit der Darstellung der eingebetteten Seiten des Katalogs haben."
 
 #: settings.php:82
 msgid "Inner Template Footer"
@@ -283,11 +283,11 @@ msgstr "Etwas Hilfe gefällig?"
 
 #: settings.php:125
 msgid "Check out the"
-msgstr "Besuchen Sie das"
+msgstr "Besuchen Sie die"
 
 #: settings.php:125
 msgid "and"
-msgstr "und/oder das"
+msgstr "und das"
 
 #: settings.php:125
 msgid "Support Forums"
