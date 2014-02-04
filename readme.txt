@@ -32,6 +32,17 @@ Use WP Catalogue to display your products in an attractive and professional cata
 *	[Click here](http://demo.enigmaweb.com.au/wp-catalogue/) for out-of-the-box demo
 *	[Click here](http://www.freewheelbicyclestore.com.au/bicycles-accessories/) for an example of a fully styled implementation
 
+= Pro vs Lite Version =
+
+This is Lite (free) version of the plugin. [Get Pro Version](http://enigmaplugins.com/plugins/wp-catalogue-pro/) if you need the following advanced features:
+
+*	Better handling of various level categories/sub-categories
+*	Shortcode functions to embed specific categories/sub-categories
+*	Fully Responsive design
+*	On/off for side menu
+*	Product Description title replaced with true product titles (optional)
+*	Featured Product function
+
 = Languages =
 
 *	English
@@ -52,19 +63,8 @@ Use WP Catalogue to display your products in an attractive and professional cata
 
 A big thank you to everyone who has helped with translation so far.
 
-Would you like to help translate the plugin into more languages? It's very easy - you don't have to know any code. Please [contact Maeve](http://www.enigmaweb.com.au/contact/)
+Would you like to help translate the plugin into more languages? It's very easy - you don't have to know any code. Please [contact Maeve](http://www.enigmaplugins.com/contact/)
 
-= Pro Version =
-
-Coming Soon...
-
-*	Ability to handle sub-categories
-*	Embed a specific category or sub-category into page/post using shortcode
-*	Responsive layout
-*	Ability to turn side menu on/off
-*	Replace 'Product Details' title with title of actual product (on/off option)
-*	On/off for 'show breadcrumbs'
-*	Featured products function
 
 == Installation ==
 
