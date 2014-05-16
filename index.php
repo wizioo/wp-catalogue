@@ -42,7 +42,7 @@ function wpc_admin_init(){
     $style_url = WP_CATALOGUE_CSS.'/sorting.css';
     wp_register_style(WPC_STYLE, $style_url);
     $script_url = WP_CATALOGUE_JS.'/sorting.js';
-    wp_register_script(WPC_SCRIPT, $script_url, array('jquery', 'jquery-ui-sortable'));	
+    wp_register_script(WPC_SCRIPT, $script_url, array('jquery', 'jquery-ui-sortable'));
 }
 
 add_action('admin_init', 'wpc_admin_init');
@@ -57,16 +57,16 @@ function front_scripts(){
 	wp_enqueue_script('wpcf-js');
 	wp_register_style('catalogue-css', WP_CATALOGUE_CSS.'/catalogue-styles.css' );
 	wp_enqueue_style( 'catalogue-css' );
-	
-	/* ========================  Take User Defined color =========================== 
+
+	/* ========================  Take User Defined color ===========================
 	wp_register_style('dynamic-css', WP_CATALOGUE_CSS.'/dynamic-styles.css.php' );
-	wp_enqueue_style( 'dynamic-css' );	*/	
+	wp_enqueue_style( 'dynamic-css' );	*/
 }
 
 // creating wp catalogue menus
 //add_action( 'admin_menu', 'wpc_plugin_menu' );
 function wpc_plugin_menu() {
-	add_submenu_page( 'edit.php?post_type=wpcproduct', 'Order', 'Order', 'manage_options', 'customtaxorder', 'customtaxorder', 2 ); 
+	add_submenu_page( 'edit.php?post_type=wpcproduct', 'Order', 'Order', 'manage_options', 'customtaxorder', 'customtaxorder', 2 );
 	add_submenu_page('edit.php?post_type=wpcproduct','Settings','Settings', 'manage_options','catalogue_settings', 'wp_catalogue_settings');
 }
 add_action('admin_print_styles', 'wpc_admin_styles');
@@ -108,9 +108,9 @@ require 'products/order.php';
 add_action("template_redirect", 'my_theme_redirect');
 
 function my_theme_redirect() {
-   	
+
     global $wp;
-   $plugindir = dirname( __FILE__ );	
+   $plugindir = dirname( __FILE__ );
     //A Specific Custom Post Type
     if ($wp->query_vars["post_type"] == 'wpcproduct') {
         $templatefilename = 'single-wpcproduct.php';
