@@ -1,4 +1,4 @@
-# Copyright (C) 2013 
+# Copyright (C) 2013
 # This file is distributed under the same license as the  package.
 msgid ""
 msgstr ""
@@ -272,4 +272,9 @@ msgstr ""
 
 #: settings.php:125
 msgid "Support Forums"
+msgstr ""
+
+#: wpc-catalogue.php:69 wpc-catalogue.php:75
+#: themefiles/single-wpcproduct.php:21 themefiles/single-wpcproduct.php:48
+msgid "All products"
 msgstr ""
