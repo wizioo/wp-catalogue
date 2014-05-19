@@ -87,7 +87,7 @@ echo '<div id="wpc-col-1">
 			$icroping	=	get_option('croping');
 		?>
 
-        <div class="product-img-view" style="max-width:<?php echo $img_width; ?>px; height:<?php echo $img_height; ?>px;">
+        <div class="product-img-view" style="max-width:<?php echo $img_width; ?>px; height:auto;">
         <img src="<?php echo $img1; ?>" alt="" id="img1" height="<?php echo $img_height; ?>" <?php if($icroping == 'image_scale_fit'){ echo 'width="'. $img_width .'"';} ?> />
         <img src="<?php echo $img2; ?>" alt="" id="img2" height="<?php echo $img_height; ?>" <?php if($icroping == 'image_scale_fit'){ echo 'width="'. $img_width .'"';} ?> />
         <img src="<?php echo $img3; ?>" alt="" id="img3" height="<?php echo $img_height; ?>" <?php if($icroping == 'image_scale_fit'){ echo 'width="'. $img_width .'"';} ?> />
