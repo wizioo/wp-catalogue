@@ -57,6 +57,7 @@ $termsCatSort	=	get_terms('wpccategories', $args);
 		foreach( $terms1 as $term1 ){
 			$slug	= $term1->slug;
 			$tname	=	$term1->name;
+			$tdescription = $term1->description;
 			$cat_url	=	get_bloginfo('siteurl').'/?wpccategories=/'.$slug;
 		};
 	}
@@ -120,6 +121,7 @@ $termsCatSort	=	get_terms('wpccategories', $args);
 			);
 		}
 
+
 		// products listing
 		$products	=	new WP_Query($args);
 		if($products->have_posts()){
@@ -137,7 +139,8 @@ $termsCatSort	=	get_terms('wpccategories', $args);
 			$i = 1;
 			$return_string .= '  <!--col-2-->
 						<div id="wpc-col-2">
-						<div id="wpc-products">';
+						<div id="wpc-products">
+						<p>'.$tdescription.'</p>';
 				while($products->have_posts()): $products->the_post();
 				$title		=	get_the_title();
 				$permalink	=	get_permalink();
