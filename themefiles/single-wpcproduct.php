@@ -93,11 +93,11 @@ echo '<div id="wpc-col-1">
         <img src="<?php echo $img3; ?>" alt="" id="img3" height="<?php echo $img_height; ?>" <?php if($icroping == 'image_scale_fit'){ echo 'width="'. $img_width .'"';} ?> />
         </div>
         <div class="wpc-product-img">
-        <?php if($img1): ?>
+        <?php if($img1 && ($img2 || $img3)): ?>
         <div class="new-prdct-img"><img src="<?php echo $img1; ?>" alt="" width="151" id="img1" /></div>
-		<?php endif; if($img2): ?>
+		<?php endif; if($img2 && ($img1 || $img3)): ?>
         <div class="new-prdct-img"><img src="<?php echo $img2; ?>" alt="" width="151" id="img2"/></div>
-		<?php endif; if($img3):?>
+		<?php endif; if($img3 && ($img2 || $img1)):?>
         <div class="new-prdct-img"><img src="<?php echo $img3; ?>" alt="" width="151" id="img3"/></div>
 		<?php endif; ?>
         </div>
