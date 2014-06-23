@@ -147,7 +147,7 @@ $termsCatSort	=	get_terms('wpccategories', $args);
 				$img		=	get_post_meta(get_the_id(),'product_img1',true);
 				$price		=	get_post_meta(get_the_id(),'product_price',true);
 				 $return_string .= '<!--wpc product-->';
-				 $return_string .= '<div class="wpc-product">';
+				 $return_string .= '<div class="wpc-product" style="width:' . $twidth . 'px;">';
 				 $return_string .= '<div class="wpc-img" style="width:' . $twidth . 'px; height:' . $theight . 'px; overflow:hidden"><a href="'. $permalink .'" class="wpc-product-link"><img src="'. $img .'" alt="" height="' . $theight . '" ';
 				  if(!get_option('tcroping')){
 					  $return_string .=  '" width="' .$img_width. '"'; }
@@ -155,11 +155,11 @@ $termsCatSort	=	get_terms('wpccategories', $args);
 				 $return_string .= '<p class="wpc-title"><a href="'. $permalink .'">' . $title . '</a></p>';
 				 $return_string .= '</div>';
 				 $return_string .= '<!--/wpc-product-->';
-				if($i == get_option('grid_rows'))
-			{
-				$return_string .= '<br clear="all" />';
-				$i = 0; // reset counter
-			}
+			// 	if($i == get_option('grid_rows'))
+			// {
+			// 	$return_string .= '<br clear="all" />';
+			// 	$i = 0; // reset counter
+			// }
 				$i++;
 				endwhile; wp_reset_postdata;
 				$return_string .= '</div>';
