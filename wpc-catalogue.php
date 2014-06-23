@@ -155,11 +155,11 @@ $termsCatSort	=	get_terms('wpccategories', $args);
 				 $return_string .= '<p class="wpc-title"><a href="'. $permalink .'">' . $title . '</a></p>';
 				 $return_string .= '</div>';
 				 $return_string .= '<!--/wpc-product-->';
-				if($i == get_option('grid_rows'))
-			{
-				$return_string .= '<br clear="all" />';
-				$i = 0; // reset counter
-			}
+			// 	if($i == get_option('grid_rows'))
+			// {
+			// 	$return_string .= '<br clear="all" />';
+			// 	$i = 0; // reset counter
+			// }
 				$i++;
 				endwhile; wp_reset_postdata;
 				$return_string .= '</div>';
